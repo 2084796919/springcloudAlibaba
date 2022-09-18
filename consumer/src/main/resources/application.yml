@@ -1,0 +1,13 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: consumer-8082
+  cloud:
+    nacos:
+      server-addr: 192.168.137.132:8848
+#      消费端取消注册
+    service-registry:
+      auto-registration:
+        enabled: false
